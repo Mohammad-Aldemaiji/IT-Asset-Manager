@@ -146,5 +146,6 @@ docs/                         Project documentation (see below)
 | Name | Student ID |
 |---|---|
 | Mohammad Aldemaiji | 222110184 |
-| TODO: Member 2 name | TODO-STUDENT-ID |
-| TODO: Member 3 name | TODO-STUDENT-ID |
+| Abdulmalik Mohamede | 221211415 |
+| Abdulrahman Makhanik | 222110452 |
+| Ibrahim Aldayhani | 222111329 |
