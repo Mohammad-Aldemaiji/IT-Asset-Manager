@@ -1,0 +1,27 @@
+name: Verify full application
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+      - name: Backend tests and executable JAR
+        working-directory: backend
+        run: bash mvnw -B clean verify
+      - uses: actions/upload-artifact@v4
+        with:
+          name: it-asset-manager-release
+          path: backend/target/it-asset-manager-2.0.0.jar

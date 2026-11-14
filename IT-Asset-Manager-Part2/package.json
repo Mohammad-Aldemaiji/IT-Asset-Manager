@@ -1,0 +1,39 @@
+{
+  "name": "it-asset-manager",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint src tests",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "test:browser": "node scripts/browser-smoke.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.8",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "@vitest/coverage-v8": "^5.0.5",
+    "jsdom": "^29.1.1",
+    "oxlint": "^1.81.0",
+    "playwright": "^1.65.1",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.5"
+  },
+  "description": "React and Spring Boot IT Asset Manager",
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

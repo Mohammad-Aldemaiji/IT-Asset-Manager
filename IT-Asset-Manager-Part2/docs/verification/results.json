@@ -1,0 +1,41 @@
+{
+  "verifiedDate": "2026-11-14",
+  "baselineCommit": "b5b2103ab05539e5ea21cce719174f17d6ffe29b",
+  "frontendTests": {
+    "passed": 73,
+    "failed": 0
+  },
+  "backendTests": {
+    "passed": 40,
+    "failed": 0
+  },
+  "frontendLineCoverage": 97.41,
+  "backendLineCoverage": 99.35,
+  "fullBuild": "passed",
+  "lint": "passed",
+  "browser": {
+    "passed": 10,
+    "steps": [
+      "Server pagination through real React and Spring",
+      "Filtering resets page and searches the complete dataset",
+      "Client validation and create with server-generated ID",
+      "New data survives browser refresh",
+      "Update and reload details from the API",
+      "Direct detail routes and missing ID",
+      "Four names match their supplied student IDs",
+      "Dashboard counts include assets outside the first page",
+      "Confirmed delete returns to the refreshed list",
+      "Mobile layout fits a 390-pixel viewport"
+    ],
+    "pageErrors": []
+  },
+  "windowsRelease": {
+    "portableJavaRuntime": "passed",
+    "combinedReactSpringJar": "passed",
+    "javascriptMimeType": "passed",
+    "persistentAssetAfterServerRestart": "passed",
+    "cleanup": "passed",
+    "verifiedId": "AST-0075"
+  },
+  "remoteGithubActions": "Not run; changes have not been pushed"
+}
